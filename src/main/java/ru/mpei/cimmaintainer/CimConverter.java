@@ -15,10 +15,10 @@ public class CimConverter {
     public static String toCim(RawSchemeDto scheme) {
         ConsoleInterceptor interceptor = new ConsoleInterceptor();
         interceptor.start();
-        System.out.println("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
+        System.out.println("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
         System.out.println("<rdf:RDF xmlns:cim=\"http://iec.ch/TC57/2016/CIM-schema-cim#\" " +
                 "xmlns:cim302=\"http://iec.ch/TC57/2018/CIM-schema-cim#\" xmlns:dtps=\"" +
-                "http://dtps.cloud/2023/schema-cim01#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\">\n");
+                "http://dtps.cloud/2023/schema-cim01#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\">");
         try {
             // Основная логика конвертации
             List<RdfResource> resources = Substation.convert(scheme);

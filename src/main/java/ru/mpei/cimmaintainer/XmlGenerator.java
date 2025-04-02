@@ -6,9 +6,17 @@ import java.io.IOException;
 public class XmlGenerator {
     public static void saveRawXml(String content, String filePath) {
         try (FileWriter writer = new FileWriter(filePath)) {
-            writer.write(content); // Просто записываем как есть
+            // Разбиваем на строки и фильтруем пустые
+            String[] lines = content.split("\\r?\\n");
+            for (String line : lines) {
+                // Проверяем, что строка не пустая (после trim)
+                if (!line.trim().isEmpty()) {
+                    writer.write(line);
+                    writer.write("\n"); // Добавляем перенос строки
+                }
+            }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Error saving XML: " + e.getMessage());
         }
     }
 }

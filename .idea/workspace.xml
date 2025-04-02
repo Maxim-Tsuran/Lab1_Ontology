@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb5e0c5c-4798-49e7-9a46-4da300b655c5" name="Changes" comment="" />
+    <list default="true" id="fb5e0c5c-4798-49e7-9a46-4da300b655c5" name="Changes" comment="1">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cim_output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cim_output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console_output.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mpei/cimmaintainer/CimConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mpei/cimmaintainer/CimConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mpei/cimmaintainer/XmlGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mpei/cimmaintainer/XmlGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/mpei/cimmaintainer/CimConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/mpei/cimmaintainer/CimConverter.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,13 +32,30 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Maxim-Tsuran"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Maxim-Tsuran/Lab1_Ontology.git",
+    "accountId": "0d1a8c69-4e34-4ad9-b773-908e8ad5c3e0"
+  }
+}]]></component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "JUnit.TestClass.executor": "Run",
+    "JUnit.TestClass.executor": "Debug",
     "git-widget-placeholder": "master"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tsura\Downloads\cim_Sliv\cim-maintainer\cim-maintainer\.idea" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="TestClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cim-maintainer" />
@@ -55,5 +91,20 @@
   </component>
   <component name="TaskManager">
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/mpei/cimmaintainer/CimConverter.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
