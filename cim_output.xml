@@ -1,0 +1,1084 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF xmlns:cim="http://iec.ch/TC57/2016/CIM-schema-cim#" xmlns:cim302="http://iec.ch/TC57/2018/CIM-schema-cim#" xmlns:dtps="http://dtps.cloud/2023/schema-cim01#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+	<cim:Substation rdf:ID = "_c4b66487-d98a-4d8a-87f4-142124b18e14">
+		<cim:IdentifiedObject.mRID>c4b66487-d98a-4d8a-87f4-142124b18e14</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Substation 1</cim:IdentifiedObject.name>
+	</cim:Substation>
+
+	<cim:Line rdf:ID = "_d55146be-1f7e-4113-94a2-08eed9e3bdf7">
+		<cim:IdentifiedObject.mRID>d55146be-1f7e-4113-94a2-08eed9e3bdf7</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Transmission Line 1</cim:IdentifiedObject.name>
+	</cim:Line>
+
+	<cim:Line rdf:ID = "_99ca703f-7615-45aa-afaf-fb95c4e4b327">
+		<cim:IdentifiedObject.mRID>99ca703f-7615-45aa-afaf-fb95c4e4b327</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Transmission Line 2</cim:IdentifiedObject.name>
+	</cim:Line>
+
+	<cim:TopologicalNode rdf:ID = "_rje54r5b-nrpo-0gpv-oxy6-kz64oduuvpph">
+		<cim:IdentifiedObject.mRID>rje54r5b-nrpo-0gpv-oxy6-kz64oduuvpph</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_l547quyg-jrgd-ei5p-w3h5-l4qljs2y86n9">
+		<cim:IdentifiedObject.mRID>l547quyg-jrgd-ei5p-w3h5-l4qljs2y86n9</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#rje54r5b-nrpo-0gpv-oxy6-kz64oduuvpph"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_d214150d-78c5-4c1a-bc3e-4aff5545013d">
+		<cim:IdentifiedObject.mRID>d214150d-78c5-4c1a-bc3e-4aff5545013d</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>E1 1</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#o4jm65q6-ihgc-xfof-pr0t-oyo2l9mytwgd"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#rje54r5b-nrpo-0gpv-oxy6-kz64oduuvpph"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#l547quyg-jrgd-ei5p-w3h5-l4qljs2y86n9"/>
+	</cim:Terminal>
+
+	<cim:EquivalentInjection rdf:ID = "_d214150d-78c5-4c1a-bc3e-4aff5545013d">
+		<cim:IdentifiedObject.mRID>d214150d-78c5-4c1a-bc3e-4aff5545013d</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>E1</cim:IdentifiedObject.name>
+		<cim:EquivalentInjection.r>0.26167978121471985</cim:EquivalentInjection.r>
+		<cim:EquivalentInjection.r2>0.26167978121471985</cim:EquivalentInjection.r2>
+		<cim:EquivalentInjection.x>4.993147673772869</cim:EquivalentInjection.x>
+		<cim:EquivalentInjection.x2>4.993147673772869</cim:EquivalentInjection.x2>
+		<cim:EquivalentInjection.r0>0.26167978121471985</cim:EquivalentInjection.r0>
+		<cim:EquivalentInjection.x0>4.993147673772869</cim:EquivalentInjection.x0>
+		<cim:EquivalentInjection.emfTimeConstant>0.05</cim:EquivalentInjection.emfTimeConstant>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="#gzifh5mv-6djx-rbhw-aooh-a8y8il91qtje"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#dkvilchp-cmg7-ozsg-gx81-m4u6rujqwvfn"/>
+	</cim:EquivalentInjection>
+
+	<cim:TopologicalNode rdf:ID = "_gbuq4qb8-6slk-dvtc-4cbf-mjgtvz7jbrv6">
+		<cim:IdentifiedObject.mRID>gbuq4qb8-6slk-dvtc-4cbf-mjgtvz7jbrv6</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_gbzut6xx-22cr-16f2-er9e-k2wdfoa4d13n">
+		<cim:IdentifiedObject.mRID>gbzut6xx-22cr-16f2-er9e-k2wdfoa4d13n</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#gbuq4qb8-6slk-dvtc-4cbf-mjgtvz7jbrv6"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_7c5e9319-8816-488f-a632-2e9b78e0c9da">
+		<cim:IdentifiedObject.mRID>7c5e9319-8816-488f-a632-2e9b78e0c9da</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q1 1</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#bnhdhrmt-u2bd-1pwc-xnkc-sztuclspb67c"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#gbuq4qb8-6slk-dvtc-4cbf-mjgtvz7jbrv6"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#gbzut6xx-22cr-16f2-er9e-k2wdfoa4d13n"/>
+	</cim:Terminal>
+
+	<cim:TopologicalNode rdf:ID = "_4p57ymwc-hz4j-it7r-dpna-fuelyjibd6w4">
+		<cim:IdentifiedObject.mRID>4p57ymwc-hz4j-it7r-dpna-fuelyjibd6w4</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_wg3y9qb9-j2xh-vvsi-i1x9-veezj3pww9lq">
+		<cim:IdentifiedObject.mRID>wg3y9qb9-j2xh-vvsi-i1x9-veezj3pww9lq</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#4p57ymwc-hz4j-it7r-dpna-fuelyjibd6w4"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_7c5e9319-8816-488f-a632-2e9b78e0c9da">
+		<cim:IdentifiedObject.mRID>7c5e9319-8816-488f-a632-2e9b78e0c9da</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q1 2</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#pj8azvjr-d2ty-mjib-f63q-rssi8i773pzr"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#4p57ymwc-hz4j-it7r-dpna-fuelyjibd6w4"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#wg3y9qb9-j2xh-vvsi-i1x9-veezj3pww9lq"/>
+	</cim:Terminal>
+
+	<cim:Breaker rdf:ID = "_7c5e9319-8816-488f-a632-2e9b78e0c9da">
+		<cim:IdentifiedObject.mRID>7c5e9319-8816-488f-a632-2e9b78e0c9da</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q1</cim:IdentifiedObject.name>
+		<cim:Switch.open>false</cim:Switch.open>
+		<cim:Switch.ratedCurrent>100</cim:Switch.ratedCurrent>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:Breaker>
+
+	<cim:TopologicalNode rdf:ID = "_mpu3c1s3-qolo-ooqt-0629-ohzginjpy0h7">
+		<cim:IdentifiedObject.mRID>mpu3c1s3-qolo-ooqt-0629-ohzginjpy0h7</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_iiq7sldy-l5up-yrhw-ghlo-3hxzj4saofpz">
+		<cim:IdentifiedObject.mRID>iiq7sldy-l5up-yrhw-ghlo-3hxzj4saofpz</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#mpu3c1s3-qolo-ooqt-0629-ohzginjpy0h7"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_3a450446-b829-4727-b4d8-aa4002ae07c3">
+		<cim:IdentifiedObject.mRID>3a450446-b829-4727-b4d8-aa4002ae07c3</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BUS1 1</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#52m4ta03-8953-73jn-p3dx-0327zxz6gn6l"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#mpu3c1s3-qolo-ooqt-0629-ohzginjpy0h7"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#iiq7sldy-l5up-yrhw-ghlo-3hxzj4saofpz"/>
+	</cim:Terminal>
+
+	<cim:TopologicalNode rdf:ID = "_bbb0rcb7-iwzf-7r1q-jzof-3g25cqehy03g">
+		<cim:IdentifiedObject.mRID>bbb0rcb7-iwzf-7r1q-jzof-3g25cqehy03g</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_jjzl4auw-atzo-ipjm-yxry-bq3e0m9fh1xk">
+		<cim:IdentifiedObject.mRID>jjzl4auw-atzo-ipjm-yxry-bq3e0m9fh1xk</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#bbb0rcb7-iwzf-7r1q-jzof-3g25cqehy03g"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_3a450446-b829-4727-b4d8-aa4002ae07c3">
+		<cim:IdentifiedObject.mRID>3a450446-b829-4727-b4d8-aa4002ae07c3</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BUS1 2</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#m8jhsfsj-sler-h99j-bj80-f8rk78y72en5"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#bbb0rcb7-iwzf-7r1q-jzof-3g25cqehy03g"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#jjzl4auw-atzo-ipjm-yxry-bq3e0m9fh1xk"/>
+	</cim:Terminal>
+
+	<cim:TopologicalNode rdf:ID = "_09zxo9da-kobe-tk0o-3ber-6fooyem4pby4">
+		<cim:IdentifiedObject.mRID>09zxo9da-kobe-tk0o-3ber-6fooyem4pby4</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_32es7t3c-rp01-jyee-zopo-x63mvta550kx">
+		<cim:IdentifiedObject.mRID>32es7t3c-rp01-jyee-zopo-x63mvta550kx</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#09zxo9da-kobe-tk0o-3ber-6fooyem4pby4"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_3a450446-b829-4727-b4d8-aa4002ae07c3">
+		<cim:IdentifiedObject.mRID>3a450446-b829-4727-b4d8-aa4002ae07c3</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BUS1 3</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>3</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#uivzsgji-6rbm-gnxt-bmo9-4cxlk7ljmxn5"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#09zxo9da-kobe-tk0o-3ber-6fooyem4pby4"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#32es7t3c-rp01-jyee-zopo-x63mvta550kx"/>
+	</cim:Terminal>
+
+	<cim:BusbarSection rdf:ID = "_3a450446-b829-4727-b4d8-aa4002ae07c3">
+		<cim:IdentifiedObject.mRID>3a450446-b829-4727-b4d8-aa4002ae07c3</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BUS1</cim:IdentifiedObject.name>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:BusbarSection>
+
+	<cim:TopologicalNode rdf:ID = "_8x55w17t-3jow-ozsx-mfs8-6fqsns4qmdfz">
+		<cim:IdentifiedObject.mRID>8x55w17t-3jow-ozsx-mfs8-6fqsns4qmdfz</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_phwl4mlw-par7-blsx-h9rf-blqarpp5z21p">
+		<cim:IdentifiedObject.mRID>phwl4mlw-par7-blsx-h9rf-blqarpp5z21p</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#8x55w17t-3jow-ozsx-mfs8-6fqsns4qmdfz"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_97a816c3-293b-4b47-9977-3a2908e85731">
+		<cim:IdentifiedObject.mRID>97a816c3-293b-4b47-9977-3a2908e85731</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q2 1</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#pf0zejjo-qggb-l684-nh1d-d5snyi4py20s"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#8x55w17t-3jow-ozsx-mfs8-6fqsns4qmdfz"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#phwl4mlw-par7-blsx-h9rf-blqarpp5z21p"/>
+	</cim:Terminal>
+
+	<cim:TopologicalNode rdf:ID = "_cebdyo5a-85vs-oqc8-t58i-lrv9g0978ov9">
+		<cim:IdentifiedObject.mRID>cebdyo5a-85vs-oqc8-t58i-lrv9g0978ov9</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_flnz5bth-1na4-m6yw-vupc-eqf5u2oekjo2">
+		<cim:IdentifiedObject.mRID>flnz5bth-1na4-m6yw-vupc-eqf5u2oekjo2</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#cebdyo5a-85vs-oqc8-t58i-lrv9g0978ov9"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_97a816c3-293b-4b47-9977-3a2908e85731">
+		<cim:IdentifiedObject.mRID>97a816c3-293b-4b47-9977-3a2908e85731</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q2 2</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#dxsrgqtp-awao-w1x5-iq3p-yvht90tzc0kx"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#cebdyo5a-85vs-oqc8-t58i-lrv9g0978ov9"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#flnz5bth-1na4-m6yw-vupc-eqf5u2oekjo2"/>
+	</cim:Terminal>
+
+	<cim:Breaker rdf:ID = "_97a816c3-293b-4b47-9977-3a2908e85731">
+		<cim:IdentifiedObject.mRID>97a816c3-293b-4b47-9977-3a2908e85731</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q2</cim:IdentifiedObject.name>
+		<cim:Switch.open>false</cim:Switch.open>
+		<cim:Switch.ratedCurrent>100</cim:Switch.ratedCurrent>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:Breaker>
+
+	<cim:TopologicalNode rdf:ID = "_h9t4hykn-tdsu-xop8-nbzw-pdd2wjj5hedo">
+		<cim:IdentifiedObject.mRID>h9t4hykn-tdsu-xop8-nbzw-pdd2wjj5hedo</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_5u0efpcl-jm6o-motz-nz5x-7lbhj8z5cgda">
+		<cim:IdentifiedObject.mRID>5u0efpcl-jm6o-motz-nz5x-7lbhj8z5cgda</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#h9t4hykn-tdsu-xop8-nbzw-pdd2wjj5hedo"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_57e1558e-8af4-40b0-8295-2c81cebf7bdd">
+		<cim:IdentifiedObject.mRID>57e1558e-8af4-40b0-8295-2c81cebf7bdd</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>T1 1</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#wrg6usjl-v9on-xblp-e095-d05wjer6kkcc"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#h9t4hykn-tdsu-xop8-nbzw-pdd2wjj5hedo"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#5u0efpcl-jm6o-motz-nz5x-7lbhj8z5cgda"/>
+	</cim:Terminal>
+
+	<cim:TopologicalNode rdf:ID = "_7in9aisp-jvem-tl0m-pfhz-x6b34gs6lr5j">
+		<cim:IdentifiedObject.mRID>7in9aisp-jvem-tl0m-pfhz-x6b34gs6lr5j</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_hxlmjucw-fjxo-16fz-zzat-0qy04oajuusj">
+		<cim:IdentifiedObject.mRID>hxlmjucw-fjxo-16fz-zzat-0qy04oajuusj</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#7in9aisp-jvem-tl0m-pfhz-x6b34gs6lr5j"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_57e1558e-8af4-40b0-8295-2c81cebf7bdd">
+		<cim:IdentifiedObject.mRID>57e1558e-8af4-40b0-8295-2c81cebf7bdd</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>T1 2</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#5pbwxoyc-mw60-fae3-c62q-9k9lcpe1am3x"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#7in9aisp-jvem-tl0m-pfhz-x6b34gs6lr5j"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#hxlmjucw-fjxo-16fz-zzat-0qy04oajuusj"/>
+	</cim:Terminal>
+
+	<cim:PowerTransformer rdf:ID = "_57e1558e-8af4-40b0-8295-2c81cebf7bdd">
+		<cim:IdentifiedObject.mRID>57e1558e-8af4-40b0-8295-2c81cebf7bdd</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>T1</cim:IdentifiedObject.name>
+		<cim:PowerTransformer.isPartOfGeneratorUnit>false</cim:PowerTransformer.isPartOfGeneratorUnit>
+		<cim:TransformerEnd.magBaseU>1.17</cim:TransformerEnd.magBaseU>
+		<cim:TransformerEnd.bmagSat>0.2</cim:TransformerEnd.bmagSat>
+		<cim:TransformerEnd.magSatFlux>125.0</cim:TransformerEnd.magSatFlux>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="#nbbzlvnf-7hm7-3uqt-ef7v-xq5tj14prp1w"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#sc0j9dlu-flly-mi3l-9rhm-gk37f39vpju1"/>
+	</cim:PowerTransformer>
+
+	<cim:TopologicalNode rdf:ID = "_07d8zq8i-lly7-98iy-3xlk-9784gl7f8s0f">
+		<cim:IdentifiedObject.mRID>07d8zq8i-lly7-98iy-3xlk-9784gl7f8s0f</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_5me58eo1-1h76-tm7k-0w68-f98u55bzxx0i">
+		<cim:IdentifiedObject.mRID>5me58eo1-1h76-tm7k-0w68-f98u55bzxx0i</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#07d8zq8i-lly7-98iy-3xlk-9784gl7f8s0f"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_745fe861-3a8c-4d00-8f15-8c6d7474bdf2">
+		<cim:IdentifiedObject.mRID>745fe861-3a8c-4d00-8f15-8c6d7474bdf2</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q3 1</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#ubz3eas6-1mno-6p7v-gqey-1042diyuqa9a"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#07d8zq8i-lly7-98iy-3xlk-9784gl7f8s0f"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#5me58eo1-1h76-tm7k-0w68-f98u55bzxx0i"/>
+	</cim:Terminal>
+
+	<cim:TopologicalNode rdf:ID = "_ba76t5tj-3495-ydo2-yrsn-ajaprtcl4kkl">
+		<cim:IdentifiedObject.mRID>ba76t5tj-3495-ydo2-yrsn-ajaprtcl4kkl</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_d2zle66r-7n7q-l6vw-fvoy-r0ahgs2ee6ua">
+		<cim:IdentifiedObject.mRID>d2zle66r-7n7q-l6vw-fvoy-r0ahgs2ee6ua</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#ba76t5tj-3495-ydo2-yrsn-ajaprtcl4kkl"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_745fe861-3a8c-4d00-8f15-8c6d7474bdf2">
+		<cim:IdentifiedObject.mRID>745fe861-3a8c-4d00-8f15-8c6d7474bdf2</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q3 2</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#kc94l3vz-s985-sjd2-ehco-vfsnmmr01x0b"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#ba76t5tj-3495-ydo2-yrsn-ajaprtcl4kkl"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#d2zle66r-7n7q-l6vw-fvoy-r0ahgs2ee6ua"/>
+	</cim:Terminal>
+
+	<cim:Breaker rdf:ID = "_745fe861-3a8c-4d00-8f15-8c6d7474bdf2">
+		<cim:IdentifiedObject.mRID>745fe861-3a8c-4d00-8f15-8c6d7474bdf2</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q3</cim:IdentifiedObject.name>
+		<cim:Switch.open>false</cim:Switch.open>
+		<cim:Switch.ratedCurrent>100</cim:Switch.ratedCurrent>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:Breaker>
+
+	<cim:TopologicalNode rdf:ID = "_axgeufcn-ozad-rg7c-nu91-mbmti6nczpfm">
+		<cim:IdentifiedObject.mRID>axgeufcn-ozad-rg7c-nu91-mbmti6nczpfm</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_ejd5ie92-8v33-ce7p-06h1-a566lzznwm27">
+		<cim:IdentifiedObject.mRID>ejd5ie92-8v33-ce7p-06h1-a566lzznwm27</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#axgeufcn-ozad-rg7c-nu91-mbmti6nczpfm"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_5dc6dcbe-17df-4a9c-9f37-972c2df36d29">
+		<cim:IdentifiedObject.mRID>5dc6dcbe-17df-4a9c-9f37-972c2df36d29</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BUS2 1</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#o27ceh5q-y739-low5-tbvf-ila3fvyrk8sx"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#axgeufcn-ozad-rg7c-nu91-mbmti6nczpfm"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#ejd5ie92-8v33-ce7p-06h1-a566lzznwm27"/>
+	</cim:Terminal>
+
+	<cim:TopologicalNode rdf:ID = "_o3hlch4i-jjzx-d61t-tzlb-7vvq7ygt8jcs">
+		<cim:IdentifiedObject.mRID>o3hlch4i-jjzx-d61t-tzlb-7vvq7ygt8jcs</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_vvg8tspa-sc8m-15tr-i96m-pa2rm4kns0pg">
+		<cim:IdentifiedObject.mRID>vvg8tspa-sc8m-15tr-i96m-pa2rm4kns0pg</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#o3hlch4i-jjzx-d61t-tzlb-7vvq7ygt8jcs"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_5dc6dcbe-17df-4a9c-9f37-972c2df36d29">
+		<cim:IdentifiedObject.mRID>5dc6dcbe-17df-4a9c-9f37-972c2df36d29</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BUS2 2</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#4qn3mxf5-2mei-06lv-pw9v-uta0ogo5qaa6"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#o3hlch4i-jjzx-d61t-tzlb-7vvq7ygt8jcs"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#vvg8tspa-sc8m-15tr-i96m-pa2rm4kns0pg"/>
+	</cim:Terminal>
+
+	<cim:TopologicalNode rdf:ID = "_61f8tw2a-vth6-pku6-l012-icvbfmgktrvv">
+		<cim:IdentifiedObject.mRID>61f8tw2a-vth6-pku6-l012-icvbfmgktrvv</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_tozr5ngh-gvpg-bznk-0yzk-gae2unxdatl4">
+		<cim:IdentifiedObject.mRID>tozr5ngh-gvpg-bznk-0yzk-gae2unxdatl4</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#61f8tw2a-vth6-pku6-l012-icvbfmgktrvv"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_5dc6dcbe-17df-4a9c-9f37-972c2df36d29">
+		<cim:IdentifiedObject.mRID>5dc6dcbe-17df-4a9c-9f37-972c2df36d29</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BUS2 3</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>3</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#skubhihm-flho-je2p-dws8-6a8qps8ey8jz"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#61f8tw2a-vth6-pku6-l012-icvbfmgktrvv"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#tozr5ngh-gvpg-bznk-0yzk-gae2unxdatl4"/>
+	</cim:Terminal>
+
+	<cim:BusbarSection rdf:ID = "_5dc6dcbe-17df-4a9c-9f37-972c2df36d29">
+		<cim:IdentifiedObject.mRID>5dc6dcbe-17df-4a9c-9f37-972c2df36d29</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BUS2</cim:IdentifiedObject.name>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:BusbarSection>
+
+	<cim:TopologicalNode rdf:ID = "_laha2vlz-dt3w-oyom-jv6x-zl4qwe8jyfy7">
+		<cim:IdentifiedObject.mRID>laha2vlz-dt3w-oyom-jv6x-zl4qwe8jyfy7</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_atngopi6-au75-j89x-ulzg-7ns8lt5qpie0">
+		<cim:IdentifiedObject.mRID>atngopi6-au75-j89x-ulzg-7ns8lt5qpie0</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#laha2vlz-dt3w-oyom-jv6x-zl4qwe8jyfy7"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_4e822b92-09f8-4c06-8b4b-f500c16804fc">
+		<cim:IdentifiedObject.mRID>4e822b92-09f8-4c06-8b4b-f500c16804fc</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q4 1</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#fr8kfcs0-sqco-thuj-53xw-z0ues20y85a1"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#laha2vlz-dt3w-oyom-jv6x-zl4qwe8jyfy7"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#atngopi6-au75-j89x-ulzg-7ns8lt5qpie0"/>
+	</cim:Terminal>
+
+	<cim:TopologicalNode rdf:ID = "_tvfdoffs-win4-q4ah-vc4n-6w6mirsp4s47">
+		<cim:IdentifiedObject.mRID>tvfdoffs-win4-q4ah-vc4n-6w6mirsp4s47</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_49hrf3sw-s938-r4qp-ayls-75zeluqv9mee">
+		<cim:IdentifiedObject.mRID>49hrf3sw-s938-r4qp-ayls-75zeluqv9mee</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#tvfdoffs-win4-q4ah-vc4n-6w6mirsp4s47"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_4e822b92-09f8-4c06-8b4b-f500c16804fc">
+		<cim:IdentifiedObject.mRID>4e822b92-09f8-4c06-8b4b-f500c16804fc</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q4 2</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#dm3fqku1-rbzb-gh8z-evtv-uz2ci34jlr9h"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#tvfdoffs-win4-q4ah-vc4n-6w6mirsp4s47"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#49hrf3sw-s938-r4qp-ayls-75zeluqv9mee"/>
+	</cim:Terminal>
+
+	<cim:Breaker rdf:ID = "_4e822b92-09f8-4c06-8b4b-f500c16804fc">
+		<cim:IdentifiedObject.mRID>4e822b92-09f8-4c06-8b4b-f500c16804fc</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q4</cim:IdentifiedObject.name>
+		<cim:Switch.open>false</cim:Switch.open>
+		<cim:Switch.ratedCurrent>100</cim:Switch.ratedCurrent>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:Breaker>
+
+	<cim:TopologicalNode rdf:ID = "_xozhrhhn-xo75-ruu0-52ph-7u7ostke6r7c">
+		<cim:IdentifiedObject.mRID>xozhrhhn-xo75-ruu0-52ph-7u7ostke6r7c</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_918co5pz-ubg1-3wtr-v07a-pvcakn41ge4s">
+		<cim:IdentifiedObject.mRID>918co5pz-ubg1-3wtr-v07a-pvcakn41ge4s</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#xozhrhhn-xo75-ruu0-52ph-7u7ostke6r7c"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_456f3b43-6576-4169-986c-16c6e99935f8">
+		<cim:IdentifiedObject.mRID>456f3b43-6576-4169-986c-16c6e99935f8</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>L1 1</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#3sry1809-ke53-vlio-q25a-r2wujnuymflu"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#xozhrhhn-xo75-ruu0-52ph-7u7ostke6r7c"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#918co5pz-ubg1-3wtr-v07a-pvcakn41ge4s"/>
+	</cim:Terminal>
+
+	<cim:EnergyConsumer rdf:ID = "_456f3b43-6576-4169-986c-16c6e99935f8">
+		<cim:IdentifiedObject.mRID>456f3b43-6576-4169-986c-16c6e99935f8</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>L1</cim:IdentifiedObject.name>
+		<cim:EnergyConsumer.grounded>false</cim:EnergyConsumer.grounded>
+		<cim:EnergyConsumer.pfixed>13.92</cim:EnergyConsumer.pfixed>
+		<cim:EnergyConsumer.p>13.92</cim:EnergyConsumer.p>
+		<cim:EnergyConsumer.qfixed>7.89</cim:EnergyConsumer.qfixed>
+		<cim:EnergyConsumer.q>7.89</cim:EnergyConsumer.q>
+		<cim:EnergyConsumer.ratedVoltage>10</cim:EnergyConsumer.ratedVoltage>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##9fd0eedd-2fbb-4160-86ba-5d577108df8d"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="##e0a21a60-5d62-48f5-8b8e-4d3a6fb9795b"/>
+		<cim:EnergyConsumer.LoadResponse rdf:resource="##8ce25b1d-045a-438a-a6b7-641023339471"/>
+	</cim:EnergyConsumer>
+
+	<cim:TopologicalNode rdf:ID = "_r7bu8vks-phcu-kncx-nwis-u93lhdayxmdy">
+		<cim:IdentifiedObject.mRID>r7bu8vks-phcu-kncx-nwis-u93lhdayxmdy</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_376s4xw4-9isf-7n1k-d02p-gmlxy6lhvyl5">
+		<cim:IdentifiedObject.mRID>376s4xw4-9isf-7n1k-d02p-gmlxy6lhvyl5</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#r7bu8vks-phcu-kncx-nwis-u93lhdayxmdy"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_90f315fa-688b-4b79-9997-2a17251af71f">
+		<cim:IdentifiedObject.mRID>90f315fa-688b-4b79-9997-2a17251af71f</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Line1 1</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#7huniq18-fx63-0zhu-w744-5bgldxbhfrsx"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#r7bu8vks-phcu-kncx-nwis-u93lhdayxmdy"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#376s4xw4-9isf-7n1k-d02p-gmlxy6lhvyl5"/>
+	</cim:Terminal>
+
+	<cim:TopologicalNode rdf:ID = "_cmmydmdf-ej9r-z4e7-zc4c-ho0ly8f6vlqm">
+		<cim:IdentifiedObject.mRID>cmmydmdf-ej9r-z4e7-zc4c-ho0ly8f6vlqm</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_b18zg0tp-yxlb-ii2c-dd9h-t53ggr4putqe">
+		<cim:IdentifiedObject.mRID>b18zg0tp-yxlb-ii2c-dd9h-t53ggr4putqe</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#cmmydmdf-ej9r-z4e7-zc4c-ho0ly8f6vlqm"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_90f315fa-688b-4b79-9997-2a17251af71f">
+		<cim:IdentifiedObject.mRID>90f315fa-688b-4b79-9997-2a17251af71f</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Line1 2</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#44o0jnhk-cp9t-49x4-gkbz-jb379bq2celv"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#cmmydmdf-ej9r-z4e7-zc4c-ho0ly8f6vlqm"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#b18zg0tp-yxlb-ii2c-dd9h-t53ggr4putqe"/>
+	</cim:Terminal>
+
+	<cim:ACLineSegment rdf:ID = "_90f315fa-688b-4b79-9997-2a17251af71f">
+		<cim:IdentifiedObject.mRID>90f315fa-688b-4b79-9997-2a17251af71f</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Line1</cim:IdentifiedObject.name>
+		<cim:Conductor.length>40</cim:Conductor.length>
+		<cim:ACLineSegment.r>4.640000000000001</cim:ACLineSegment.r>
+		<cim:ACLineSegment.r0>46.4</cim:ACLineSegment.r0>
+		<cim:ACLineSegment.x>16.0</cim:ACLineSegment.x>
+		<cim:ACLineSegment.x0>48.0</cim:ACLineSegment.x0>
+		<cim:ACLineSegment.bch>108.0</cim:ACLineSegment.bch>
+		<cim:ACLineSegment.b0ch>90.0</cim:ACLineSegment.b0ch>
+		<cim:ACLineSegment.ratedActivePower>100</cim:ACLineSegment.ratedActivePower>
+		<cim:ACLineSegment.userConcentratedParameters>false</cim:ACLineSegment.userConcentratedParameters>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="#e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#99ca703f-7615-45aa-afaf-fb95c4e4b327"/>
+	</cim:ACLineSegment>
+
+	<cim:TopologicalNode rdf:ID = "_we1s6x2y-69nw-i9qf-7f9n-bhqa4oaisrse">
+		<cim:IdentifiedObject.mRID>we1s6x2y-69nw-i9qf-7f9n-bhqa4oaisrse</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_nztamjaz-ql20-dtjp-pgar-k80usfb0qida">
+		<cim:IdentifiedObject.mRID>nztamjaz-ql20-dtjp-pgar-k80usfb0qida</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#we1s6x2y-69nw-i9qf-7f9n-bhqa4oaisrse"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_f8ae4fba-c20d-43ea-bb07-899f30780665">
+		<cim:IdentifiedObject.mRID>f8ae4fba-c20d-43ea-bb07-899f30780665</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>E2 1</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#dh5v9wuq-kz1v-rubq-df9u-dikjslnowlue"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#we1s6x2y-69nw-i9qf-7f9n-bhqa4oaisrse"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#nztamjaz-ql20-dtjp-pgar-k80usfb0qida"/>
+	</cim:Terminal>
+
+	<cim:EquivalentInjection rdf:ID = "_f8ae4fba-c20d-43ea-bb07-899f30780665">
+		<cim:IdentifiedObject.mRID>f8ae4fba-c20d-43ea-bb07-899f30780665</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>E2</cim:IdentifiedObject.name>
+		<cim:EquivalentInjection.r>0.26167978121471985</cim:EquivalentInjection.r>
+		<cim:EquivalentInjection.r2>0.26167978121471985</cim:EquivalentInjection.r2>
+		<cim:EquivalentInjection.x>4.993147673772869</cim:EquivalentInjection.x>
+		<cim:EquivalentInjection.x2>4.993147673772869</cim:EquivalentInjection.x2>
+		<cim:EquivalentInjection.r0>0.26167978121471985</cim:EquivalentInjection.r0>
+		<cim:EquivalentInjection.x0>4.993147673772869</cim:EquivalentInjection.x0>
+		<cim:EquivalentInjection.emfTimeConstant>0.05</cim:EquivalentInjection.emfTimeConstant>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="#yi0fxq4e-6adn-h1er-mhm0-rv5w9ctaa8cm"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#14epw5xb-mvwo-x1vu-dz4s-pn0szvk9szvq"/>
+	</cim:EquivalentInjection>
+
+	<cim:TopologicalNode rdf:ID = "_mcja5tpj-vc0q-em35-wob7-mcrexs3nq4b8">
+		<cim:IdentifiedObject.mRID>mcja5tpj-vc0q-em35-wob7-mcrexs3nq4b8</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_9n3rk4ah-zsao-cztf-v280-aq5lwy82mejc">
+		<cim:IdentifiedObject.mRID>9n3rk4ah-zsao-cztf-v280-aq5lwy82mejc</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#mcja5tpj-vc0q-em35-wob7-mcrexs3nq4b8"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_89a61c9e-9750-4ada-b4f6-399fdbab6391">
+		<cim:IdentifiedObject.mRID>89a61c9e-9750-4ada-b4f6-399fdbab6391</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q5 1</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#0f7jvaxx-o8uj-575y-ikh2-r51t5dze01lx"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#mcja5tpj-vc0q-em35-wob7-mcrexs3nq4b8"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#9n3rk4ah-zsao-cztf-v280-aq5lwy82mejc"/>
+	</cim:Terminal>
+
+	<cim:TopologicalNode rdf:ID = "_2uyvnyf9-knm4-zr1d-mwvg-wnaw3w19e7zb">
+		<cim:IdentifiedObject.mRID>2uyvnyf9-knm4-zr1d-mwvg-wnaw3w19e7zb</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_4jo0p4j6-hfww-vbml-08e1-ls3i2ym95n09">
+		<cim:IdentifiedObject.mRID>4jo0p4j6-hfww-vbml-08e1-ls3i2ym95n09</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#2uyvnyf9-knm4-zr1d-mwvg-wnaw3w19e7zb"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_89a61c9e-9750-4ada-b4f6-399fdbab6391">
+		<cim:IdentifiedObject.mRID>89a61c9e-9750-4ada-b4f6-399fdbab6391</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q5 2</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#igcfskbz-5iv9-yd6w-qx1z-37p5ezey5mqr"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#2uyvnyf9-knm4-zr1d-mwvg-wnaw3w19e7zb"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#4jo0p4j6-hfww-vbml-08e1-ls3i2ym95n09"/>
+	</cim:Terminal>
+
+	<cim:Breaker rdf:ID = "_89a61c9e-9750-4ada-b4f6-399fdbab6391">
+		<cim:IdentifiedObject.mRID>89a61c9e-9750-4ada-b4f6-399fdbab6391</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q5</cim:IdentifiedObject.name>
+		<cim:Switch.open>false</cim:Switch.open>
+		<cim:Switch.ratedCurrent>100</cim:Switch.ratedCurrent>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:Breaker>
+
+	<cim:TopologicalNode rdf:ID = "_jnru6cxd-15ze-5icd-f0w5-8zdh39eb3al0">
+		<cim:IdentifiedObject.mRID>jnru6cxd-15ze-5icd-f0w5-8zdh39eb3al0</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_3onvckcd-gt87-fyco-6v5r-aa1ohjywoiv4">
+		<cim:IdentifiedObject.mRID>3onvckcd-gt87-fyco-6v5r-aa1ohjywoiv4</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#jnru6cxd-15ze-5icd-f0w5-8zdh39eb3al0"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_ec100d29-212b-4269-a835-780e2f8420e3">
+		<cim:IdentifiedObject.mRID>ec100d29-212b-4269-a835-780e2f8420e3</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BUS3 1</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#90hx4muu-zol9-ci7d-d1mk-rm20qhrivmh2"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#jnru6cxd-15ze-5icd-f0w5-8zdh39eb3al0"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#3onvckcd-gt87-fyco-6v5r-aa1ohjywoiv4"/>
+	</cim:Terminal>
+
+	<cim:TopologicalNode rdf:ID = "_4achpmhp-gksa-rjsa-y9ol-vmf38pto0mso">
+		<cim:IdentifiedObject.mRID>4achpmhp-gksa-rjsa-y9ol-vmf38pto0mso</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_plik5oya-5hxg-biqw-rfva-q6p1liru12b7">
+		<cim:IdentifiedObject.mRID>plik5oya-5hxg-biqw-rfva-q6p1liru12b7</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#4achpmhp-gksa-rjsa-y9ol-vmf38pto0mso"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_ec100d29-212b-4269-a835-780e2f8420e3">
+		<cim:IdentifiedObject.mRID>ec100d29-212b-4269-a835-780e2f8420e3</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BUS3 2</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#ml4m5mgi-3z62-csdo-ufej-2bm7vtgk7tr4"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#4achpmhp-gksa-rjsa-y9ol-vmf38pto0mso"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#plik5oya-5hxg-biqw-rfva-q6p1liru12b7"/>
+	</cim:Terminal>
+
+	<cim:TopologicalNode rdf:ID = "_vpqeagub-0u4n-uwnu-go5t-snlrhvxx33pa">
+		<cim:IdentifiedObject.mRID>vpqeagub-0u4n-uwnu-go5t-snlrhvxx33pa</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_rzcslgn9-mw8r-1hms-9sa9-t7lsz42a66zu">
+		<cim:IdentifiedObject.mRID>rzcslgn9-mw8r-1hms-9sa9-t7lsz42a66zu</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#vpqeagub-0u4n-uwnu-go5t-snlrhvxx33pa"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_ec100d29-212b-4269-a835-780e2f8420e3">
+		<cim:IdentifiedObject.mRID>ec100d29-212b-4269-a835-780e2f8420e3</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BUS3 3</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>3</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#3rux6xa6-d1kv-mc03-9y6e-pywx87ojy7z6"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#vpqeagub-0u4n-uwnu-go5t-snlrhvxx33pa"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#rzcslgn9-mw8r-1hms-9sa9-t7lsz42a66zu"/>
+	</cim:Terminal>
+
+	<cim:BusbarSection rdf:ID = "_ec100d29-212b-4269-a835-780e2f8420e3">
+		<cim:IdentifiedObject.mRID>ec100d29-212b-4269-a835-780e2f8420e3</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BUS3</cim:IdentifiedObject.name>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:BusbarSection>
+
+	<cim:TopologicalNode rdf:ID = "_gcuca231-ztb6-113m-9h8i-qgxuk47ppnml">
+		<cim:IdentifiedObject.mRID>gcuca231-ztb6-113m-9h8i-qgxuk47ppnml</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_4xcab2sp-nt89-woz8-1a3z-lj8v7kuk51ed">
+		<cim:IdentifiedObject.mRID>4xcab2sp-nt89-woz8-1a3z-lj8v7kuk51ed</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#gcuca231-ztb6-113m-9h8i-qgxuk47ppnml"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_7c3005c8-ed08-47e0-bbcc-8eb933dd719f">
+		<cim:IdentifiedObject.mRID>7c3005c8-ed08-47e0-bbcc-8eb933dd719f</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q6 1</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#7l57roem-ia3h-20vh-o7tn-yo453xe76epr"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#gcuca231-ztb6-113m-9h8i-qgxuk47ppnml"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#4xcab2sp-nt89-woz8-1a3z-lj8v7kuk51ed"/>
+	</cim:Terminal>
+
+	<cim:TopologicalNode rdf:ID = "_u1duzn83-9te0-hdjp-uhtb-thbbd71k8w4l">
+		<cim:IdentifiedObject.mRID>u1duzn83-9te0-hdjp-uhtb-thbbd71k8w4l</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_t79anbub-4v4a-6o1k-g44z-8n6dvm17bgue">
+		<cim:IdentifiedObject.mRID>t79anbub-4v4a-6o1k-g44z-8n6dvm17bgue</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#u1duzn83-9te0-hdjp-uhtb-thbbd71k8w4l"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_7c3005c8-ed08-47e0-bbcc-8eb933dd719f">
+		<cim:IdentifiedObject.mRID>7c3005c8-ed08-47e0-bbcc-8eb933dd719f</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q6 2</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#mxfk0tly-baxb-n1bk-gvfn-tdb06olhuupb"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#u1duzn83-9te0-hdjp-uhtb-thbbd71k8w4l"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#t79anbub-4v4a-6o1k-g44z-8n6dvm17bgue"/>
+	</cim:Terminal>
+
+	<cim:Breaker rdf:ID = "_7c3005c8-ed08-47e0-bbcc-8eb933dd719f">
+		<cim:IdentifiedObject.mRID>7c3005c8-ed08-47e0-bbcc-8eb933dd719f</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q6</cim:IdentifiedObject.name>
+		<cim:Switch.open>false</cim:Switch.open>
+		<cim:Switch.ratedCurrent>100</cim:Switch.ratedCurrent>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:Breaker>
+
+	<cim:TopologicalNode rdf:ID = "_77cttz9y-emii-6qwi-4762-i55v8toaq0x4">
+		<cim:IdentifiedObject.mRID>77cttz9y-emii-6qwi-4762-i55v8toaq0x4</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_0a4qx7c2-tz12-afcw-a1m5-11vnvtaj4quq">
+		<cim:IdentifiedObject.mRID>0a4qx7c2-tz12-afcw-a1m5-11vnvtaj4quq</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#77cttz9y-emii-6qwi-4762-i55v8toaq0x4"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_52e807b0-8bf4-4c9a-8e1d-c640002b220c">
+		<cim:IdentifiedObject.mRID>52e807b0-8bf4-4c9a-8e1d-c640002b220c</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>T1clone 1</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#ii3zenim-pzem-3ej9-nwo8-7g586ih82szx"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#77cttz9y-emii-6qwi-4762-i55v8toaq0x4"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#0a4qx7c2-tz12-afcw-a1m5-11vnvtaj4quq"/>
+	</cim:Terminal>
+
+	<cim:TopologicalNode rdf:ID = "_z7gcts6c-38jr-r4jd-aa5u-fj8r3sm9nm2t">
+		<cim:IdentifiedObject.mRID>z7gcts6c-38jr-r4jd-aa5u-fj8r3sm9nm2t</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_byxkjvqa-pit5-ggdw-ied7-brplq7ynu0fl">
+		<cim:IdentifiedObject.mRID>byxkjvqa-pit5-ggdw-ied7-brplq7ynu0fl</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#z7gcts6c-38jr-r4jd-aa5u-fj8r3sm9nm2t"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_52e807b0-8bf4-4c9a-8e1d-c640002b220c">
+		<cim:IdentifiedObject.mRID>52e807b0-8bf4-4c9a-8e1d-c640002b220c</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>T1clone 2</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#wycv63r5-a7ru-tj28-jku5-kgpof14mzwyz"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#z7gcts6c-38jr-r4jd-aa5u-fj8r3sm9nm2t"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#byxkjvqa-pit5-ggdw-ied7-brplq7ynu0fl"/>
+	</cim:Terminal>
+
+	<cim:PowerTransformer rdf:ID = "_52e807b0-8bf4-4c9a-8e1d-c640002b220c">
+		<cim:IdentifiedObject.mRID>52e807b0-8bf4-4c9a-8e1d-c640002b220c</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>T1clone</cim:IdentifiedObject.name>
+		<cim:PowerTransformer.isPartOfGeneratorUnit>false</cim:PowerTransformer.isPartOfGeneratorUnit>
+		<cim:TransformerEnd.magBaseU>1.17</cim:TransformerEnd.magBaseU>
+		<cim:TransformerEnd.bmagSat>0.2</cim:TransformerEnd.bmagSat>
+		<cim:TransformerEnd.magSatFlux>125.0</cim:TransformerEnd.magSatFlux>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="#f45kjk5h-0y2l-su65-4sqm-ils49chh5zqa"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#9d2pnkxt-jyvd-zbls-0h8k-eec6j2exucim"/>
+	</cim:PowerTransformer>
+
+	<cim:TopologicalNode rdf:ID = "_ce3myf73-q9gd-b3hm-l6vc-r4dureuj4k2k">
+		<cim:IdentifiedObject.mRID>ce3myf73-q9gd-b3hm-l6vc-r4dureuj4k2k</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_46hy0ddx-0u8d-k3y5-jfho-qtzg1qu1sa9b">
+		<cim:IdentifiedObject.mRID>46hy0ddx-0u8d-k3y5-jfho-qtzg1qu1sa9b</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#ce3myf73-q9gd-b3hm-l6vc-r4dureuj4k2k"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_845f803a-6f15-4f84-a016-0880401e1762">
+		<cim:IdentifiedObject.mRID>845f803a-6f15-4f84-a016-0880401e1762</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q7 1</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#r2icldjt-b625-c16o-q6ni-1xjh9y5yr0kb"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#ce3myf73-q9gd-b3hm-l6vc-r4dureuj4k2k"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#46hy0ddx-0u8d-k3y5-jfho-qtzg1qu1sa9b"/>
+	</cim:Terminal>
+
+	<cim:TopologicalNode rdf:ID = "_z1ic6odp-8lck-wbjt-g0hf-r4xv8xxfgzd9">
+		<cim:IdentifiedObject.mRID>z1ic6odp-8lck-wbjt-g0hf-r4xv8xxfgzd9</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_zmt020pq-pcck-5hoz-73kq-b444g8hrgqu2">
+		<cim:IdentifiedObject.mRID>zmt020pq-pcck-5hoz-73kq-b444g8hrgqu2</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#z1ic6odp-8lck-wbjt-g0hf-r4xv8xxfgzd9"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_845f803a-6f15-4f84-a016-0880401e1762">
+		<cim:IdentifiedObject.mRID>845f803a-6f15-4f84-a016-0880401e1762</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q7 2</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#cton2oml-6uet-91v7-ppfb-dpiu2x073505"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#z1ic6odp-8lck-wbjt-g0hf-r4xv8xxfgzd9"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#zmt020pq-pcck-5hoz-73kq-b444g8hrgqu2"/>
+	</cim:Terminal>
+
+	<cim:Breaker rdf:ID = "_845f803a-6f15-4f84-a016-0880401e1762">
+		<cim:IdentifiedObject.mRID>845f803a-6f15-4f84-a016-0880401e1762</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q7</cim:IdentifiedObject.name>
+		<cim:Switch.open>false</cim:Switch.open>
+		<cim:Switch.ratedCurrent>100</cim:Switch.ratedCurrent>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:Breaker>
+
+	<cim:TopologicalNode rdf:ID = "_7ohbu2r1-55v1-82ul-t23c-3r9jvh3pm524">
+		<cim:IdentifiedObject.mRID>7ohbu2r1-55v1-82ul-t23c-3r9jvh3pm524</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_lbgitah0-r9dy-8zii-c2wc-o5ircz1piiry">
+		<cim:IdentifiedObject.mRID>lbgitah0-r9dy-8zii-c2wc-o5ircz1piiry</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#7ohbu2r1-55v1-82ul-t23c-3r9jvh3pm524"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_165a49a5-1f4e-4173-8ba1-69ba45471707">
+		<cim:IdentifiedObject.mRID>165a49a5-1f4e-4173-8ba1-69ba45471707</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BUS4 1</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#l6ntce54-e1ib-yyb6-wqgd-7a88by7uevql"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#7ohbu2r1-55v1-82ul-t23c-3r9jvh3pm524"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#lbgitah0-r9dy-8zii-c2wc-o5ircz1piiry"/>
+	</cim:Terminal>
+
+	<cim:TopologicalNode rdf:ID = "_kunub8wq-9qb0-1vdn-gobb-qetfuyxcgxgz">
+		<cim:IdentifiedObject.mRID>kunub8wq-9qb0-1vdn-gobb-qetfuyxcgxgz</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_xguh35fb-ylyh-iuyx-0u8v-ruwn80lgg6lx">
+		<cim:IdentifiedObject.mRID>xguh35fb-ylyh-iuyx-0u8v-ruwn80lgg6lx</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#kunub8wq-9qb0-1vdn-gobb-qetfuyxcgxgz"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_165a49a5-1f4e-4173-8ba1-69ba45471707">
+		<cim:IdentifiedObject.mRID>165a49a5-1f4e-4173-8ba1-69ba45471707</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BUS4 2</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#baz2rdsg-6jxm-vwo9-lt0n-0h97gx70an00"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#kunub8wq-9qb0-1vdn-gobb-qetfuyxcgxgz"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#xguh35fb-ylyh-iuyx-0u8v-ruwn80lgg6lx"/>
+	</cim:Terminal>
+
+	<cim:TopologicalNode rdf:ID = "_hr7clwy4-d54z-9uip-u1qr-kpiwsmlz36n4">
+		<cim:IdentifiedObject.mRID>hr7clwy4-d54z-9uip-u1qr-kpiwsmlz36n4</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_5ztvvsga-xlpj-cghd-blwa-ek7nu1zuxw3m">
+		<cim:IdentifiedObject.mRID>5ztvvsga-xlpj-cghd-blwa-ek7nu1zuxw3m</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#hr7clwy4-d54z-9uip-u1qr-kpiwsmlz36n4"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_165a49a5-1f4e-4173-8ba1-69ba45471707">
+		<cim:IdentifiedObject.mRID>165a49a5-1f4e-4173-8ba1-69ba45471707</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BUS4 3</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>3</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#dznn39dk-qftg-j3f7-8ir6-6ydit13uj8wg"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#hr7clwy4-d54z-9uip-u1qr-kpiwsmlz36n4"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#5ztvvsga-xlpj-cghd-blwa-ek7nu1zuxw3m"/>
+	</cim:Terminal>
+
+	<cim:BusbarSection rdf:ID = "_165a49a5-1f4e-4173-8ba1-69ba45471707">
+		<cim:IdentifiedObject.mRID>165a49a5-1f4e-4173-8ba1-69ba45471707</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BUS4</cim:IdentifiedObject.name>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:BusbarSection>
+
+	<cim:TopologicalNode rdf:ID = "_z8tw05ij-cz99-qdi1-x1v2-t3e48cfgtpk6">
+		<cim:IdentifiedObject.mRID>z8tw05ij-cz99-qdi1-x1v2-t3e48cfgtpk6</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_g9wdeo6m-h7do-72uq-32r0-ijn46o4wnpa4">
+		<cim:IdentifiedObject.mRID>g9wdeo6m-h7do-72uq-32r0-ijn46o4wnpa4</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#z8tw05ij-cz99-qdi1-x1v2-t3e48cfgtpk6"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_1ee8d50a-ba5a-4f26-93da-47afa5855fcc">
+		<cim:IdentifiedObject.mRID>1ee8d50a-ba5a-4f26-93da-47afa5855fcc</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q8 1</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#py1tv90z-alkk-rh9o-9mxs-gofeo5jy5jvo"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#z8tw05ij-cz99-qdi1-x1v2-t3e48cfgtpk6"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#g9wdeo6m-h7do-72uq-32r0-ijn46o4wnpa4"/>
+	</cim:Terminal>
+
+	<cim:TopologicalNode rdf:ID = "_824q64hq-63q2-g840-0kv8-ofstm6obsrpc">
+		<cim:IdentifiedObject.mRID>824q64hq-63q2-g840-0kv8-ofstm6obsrpc</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_4bbbdmax-bjwv-xon4-pbo8-mhy9f73kp5jk">
+		<cim:IdentifiedObject.mRID>4bbbdmax-bjwv-xon4-pbo8-mhy9f73kp5jk</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#824q64hq-63q2-g840-0kv8-ofstm6obsrpc"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_1ee8d50a-ba5a-4f26-93da-47afa5855fcc">
+		<cim:IdentifiedObject.mRID>1ee8d50a-ba5a-4f26-93da-47afa5855fcc</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q8 2</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#k3z297uv-luzh-eds5-tbas-r1etd8ayutb9"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#824q64hq-63q2-g840-0kv8-ofstm6obsrpc"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#4bbbdmax-bjwv-xon4-pbo8-mhy9f73kp5jk"/>
+	</cim:Terminal>
+
+	<cim:Breaker rdf:ID = "_1ee8d50a-ba5a-4f26-93da-47afa5855fcc">
+		<cim:IdentifiedObject.mRID>1ee8d50a-ba5a-4f26-93da-47afa5855fcc</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q8</cim:IdentifiedObject.name>
+		<cim:Switch.open>false</cim:Switch.open>
+		<cim:Switch.ratedCurrent>100</cim:Switch.ratedCurrent>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:Breaker>
+
+	<cim:TopologicalNode rdf:ID = "_r6ktes0n-twhz-7gew-bmhs-k1duxks29v82">
+		<cim:IdentifiedObject.mRID>r6ktes0n-twhz-7gew-bmhs-k1duxks29v82</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_eemhmpn0-1g2x-q3f8-qylk-7unc32o8nk21">
+		<cim:IdentifiedObject.mRID>eemhmpn0-1g2x-q3f8-qylk-7unc32o8nk21</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#r6ktes0n-twhz-7gew-bmhs-k1duxks29v82"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_a8cd2fe2-4704-4e32-93e2-070c48a44941">
+		<cim:IdentifiedObject.mRID>a8cd2fe2-4704-4e32-93e2-070c48a44941</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>L2 1</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#uv52ueqk-ftlt-yzcv-sgwb-k28apj3140sh"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#r6ktes0n-twhz-7gew-bmhs-k1duxks29v82"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#eemhmpn0-1g2x-q3f8-qylk-7unc32o8nk21"/>
+	</cim:Terminal>
+
+	<cim:EnergyConsumer rdf:ID = "_a8cd2fe2-4704-4e32-93e2-070c48a44941">
+		<cim:IdentifiedObject.mRID>a8cd2fe2-4704-4e32-93e2-070c48a44941</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>L2</cim:IdentifiedObject.name>
+		<cim:EnergyConsumer.grounded>false</cim:EnergyConsumer.grounded>
+		<cim:EnergyConsumer.pfixed>13.92</cim:EnergyConsumer.pfixed>
+		<cim:EnergyConsumer.p>13.92</cim:EnergyConsumer.p>
+		<cim:EnergyConsumer.qfixed>7.89</cim:EnergyConsumer.qfixed>
+		<cim:EnergyConsumer.q>7.89</cim:EnergyConsumer.q>
+		<cim:EnergyConsumer.ratedVoltage>10</cim:EnergyConsumer.ratedVoltage>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##9fd0eedd-2fbb-4160-86ba-5d577108df8d"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="##e0a21a60-5d62-48f5-8b8e-4d3a6fb9795b"/>
+		<cim:EnergyConsumer.LoadResponse rdf:resource="##8ce25b1d-045a-438a-a6b7-641023339471"/>
+	</cim:EnergyConsumer>
+
+	<cim:TopologicalNode rdf:ID = "_6uggf974-aemt-bz7s-c9vl-d36eipzzw2ui">
+		<cim:IdentifiedObject.mRID>6uggf974-aemt-bz7s-c9vl-d36eipzzw2ui</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_wdauy892-rowj-c4o8-moja-geakrcy2duc2">
+		<cim:IdentifiedObject.mRID>wdauy892-rowj-c4o8-moja-geakrcy2duc2</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#6uggf974-aemt-bz7s-c9vl-d36eipzzw2ui"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_aa0701d7-dd51-4ebd-99b8-83d85d78a8ef">
+		<cim:IdentifiedObject.mRID>aa0701d7-dd51-4ebd-99b8-83d85d78a8ef</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Line2 1</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#r64dz886-cq70-nv24-zgjp-u5xpttaxi6ki"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#6uggf974-aemt-bz7s-c9vl-d36eipzzw2ui"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#wdauy892-rowj-c4o8-moja-geakrcy2duc2"/>
+	</cim:Terminal>
+
+	<cim:TopologicalNode rdf:ID = "_l5pio24e-ooen-cpai-ml2w-1trqf8db6h6r">
+		<cim:IdentifiedObject.mRID>l5pio24e-ooen-cpai-ml2w-1trqf8db6h6r</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_aowblugh-k7ix-n987-58uf-g2vboy6qpqos">
+		<cim:IdentifiedObject.mRID>aowblugh-k7ix-n987-58uf-g2vboy6qpqos</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#l5pio24e-ooen-cpai-ml2w-1trqf8db6h6r"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_aa0701d7-dd51-4ebd-99b8-83d85d78a8ef">
+		<cim:IdentifiedObject.mRID>aa0701d7-dd51-4ebd-99b8-83d85d78a8ef</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Line2 2</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#tz4neywk-e2f2-vr25-035i-zff2y16rikmu"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#l5pio24e-ooen-cpai-ml2w-1trqf8db6h6r"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#aowblugh-k7ix-n987-58uf-g2vboy6qpqos"/>
+	</cim:Terminal>
+
+	<cim:ACLineSegment rdf:ID = "_aa0701d7-dd51-4ebd-99b8-83d85d78a8ef">
+		<cim:IdentifiedObject.mRID>aa0701d7-dd51-4ebd-99b8-83d85d78a8ef</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Line2</cim:IdentifiedObject.name>
+		<cim:Conductor.length>40</cim:Conductor.length>
+		<cim:ACLineSegment.r>4.640000000000001</cim:ACLineSegment.r>
+		<cim:ACLineSegment.r0>46.4</cim:ACLineSegment.r0>
+		<cim:ACLineSegment.x>16.0</cim:ACLineSegment.x>
+		<cim:ACLineSegment.x0>48.0</cim:ACLineSegment.x0>
+		<cim:ACLineSegment.bch>108.0</cim:ACLineSegment.bch>
+		<cim:ACLineSegment.b0ch>90.0</cim:ACLineSegment.b0ch>
+		<cim:ACLineSegment.ratedActivePower>100</cim:ACLineSegment.ratedActivePower>
+		<cim:ACLineSegment.userConcentratedParameters>false</cim:ACLineSegment.userConcentratedParameters>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="#e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#99ca703f-7615-45aa-afaf-fb95c4e4b327"/>
+	</cim:ACLineSegment>
+
+	<cim:TopologicalNode rdf:ID = "_4gfyoy7f-ycdw-1rn3-wlmy-1nc6glba21az">
+		<cim:IdentifiedObject.mRID>4gfyoy7f-ycdw-1rn3-wlmy-1nc6glba21az</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_ryd8jb1l-pqgp-gkec-zq34-d6ucbiwql725">
+		<cim:IdentifiedObject.mRID>ryd8jb1l-pqgp-gkec-zq34-d6ucbiwql725</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#4gfyoy7f-ycdw-1rn3-wlmy-1nc6glba21az"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_824916bf-0d81-4773-8fc8-ac01c6a4be8e">
+		<cim:IdentifiedObject.mRID>824916bf-0d81-4773-8fc8-ac01c6a4be8e</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>QS1 1</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#tcjfaat7-550c-ntwl-qox4-mpf7zh1kk7jq"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#4gfyoy7f-ycdw-1rn3-wlmy-1nc6glba21az"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#ryd8jb1l-pqgp-gkec-zq34-d6ucbiwql725"/>
+	</cim:Terminal>
+
+	<cim:TopologicalNode rdf:ID = "_mdfikeyw-vpud-jc0c-tzmb-e65cq09facdt">
+		<cim:IdentifiedObject.mRID>mdfikeyw-vpud-jc0c-tzmb-e65cq09facdt</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_xjkda11v-qlzd-0w0b-bvv0-0rtm0q9aetey">
+		<cim:IdentifiedObject.mRID>xjkda11v-qlzd-0w0b-bvv0-0rtm0q9aetey</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#mdfikeyw-vpud-jc0c-tzmb-e65cq09facdt"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_824916bf-0d81-4773-8fc8-ac01c6a4be8e">
+		<cim:IdentifiedObject.mRID>824916bf-0d81-4773-8fc8-ac01c6a4be8e</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>QS1 2</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#tarjr5t3-8i1f-216i-07t8-byd3f3157aei"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#mdfikeyw-vpud-jc0c-tzmb-e65cq09facdt"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#xjkda11v-qlzd-0w0b-bvv0-0rtm0q9aetey"/>
+	</cim:Terminal>
+
+	<cim:Breaker rdf:ID = "_824916bf-0d81-4773-8fc8-ac01c6a4be8e">
+		<cim:IdentifiedObject.mRID>824916bf-0d81-4773-8fc8-ac01c6a4be8e</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>QS1</cim:IdentifiedObject.name>
+		<cim:Switch.open>false</cim:Switch.open>
+		<cim:Switch.ratedCurrent>100</cim:Switch.ratedCurrent>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:Breaker>
+
+	<cim:TopologicalNode rdf:ID = "_cqdlqn9n-zkwm-pm1a-9gpy-cnqz8popqvrs">
+		<cim:IdentifiedObject.mRID>cqdlqn9n-zkwm-pm1a-9gpy-cnqz8popqvrs</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_k7h8la7n-70qz-mohy-sbwl-2jde2cpzmnhj">
+		<cim:IdentifiedObject.mRID>k7h8la7n-70qz-mohy-sbwl-2jde2cpzmnhj</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#cqdlqn9n-zkwm-pm1a-9gpy-cnqz8popqvrs"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_2347dcfc-8989-40cc-a77c-18311074387b">
+		<cim:IdentifiedObject.mRID>2347dcfc-8989-40cc-a77c-18311074387b</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>QS2 1</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#qdsznnzv-za71-pdax-sv5g-3h2d6vptpcmg"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#cqdlqn9n-zkwm-pm1a-9gpy-cnqz8popqvrs"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#k7h8la7n-70qz-mohy-sbwl-2jde2cpzmnhj"/>
+	</cim:Terminal>
+
+	<cim:TopologicalNode rdf:ID = "_n04sh3ew-4kz5-qt79-ks2b-u0x9zxlq0fan">
+		<cim:IdentifiedObject.mRID>n04sh3ew-4kz5-qt79-ks2b-u0x9zxlq0fan</cim:IdentifiedObject.mRID>
+	</cim:TopologicalNode>
+
+	<cim:ConnectivityNode rdf:ID = "_xdw7fijv-qxcm-a1w9-9k8x-bel53ojyd5bb">
+		<cim:IdentifiedObject.mRID>xdw7fijv-qxcm-a1w9-9k8x-bel53ojyd5bb</cim:IdentifiedObject.mRID>
+		<cim:ConnectivityNode.TopologicalNode rdf:resource="#n04sh3ew-4kz5-qt79-ks2b-u0x9zxlq0fan"/>
+	</cim:ConnectivityNode>
+
+	<cim:Terminal rdf:ID = "_2347dcfc-8989-40cc-a77c-18311074387b">
+		<cim:IdentifiedObject.mRID>2347dcfc-8989-40cc-a77c-18311074387b</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>QS2 2</cim:IdentifiedObject.name>
+		<cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+		<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2016/CIM-schema-cim#PhaseCode.ABC"/>
+		<cim:Terminal.ConductingEquipment rdf:resource="#628bxwjm-66ap-gbmc-ywxh-46pj14hfd4mm"/>
+		<cim:Terminal.TopologicalNode rdf:resource="#n04sh3ew-4kz5-qt79-ks2b-u0x9zxlq0fan"/>
+		<cim:Terminal.ConnectivityNode rdf:resource="#xdw7fijv-qxcm-a1w9-9k8x-bel53ojyd5bb"/>
+	</cim:Terminal>
+
+	<cim:Breaker rdf:ID = "_2347dcfc-8989-40cc-a77c-18311074387b">
+		<cim:IdentifiedObject.mRID>2347dcfc-8989-40cc-a77c-18311074387b</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>QS2</cim:IdentifiedObject.name>
+		<cim:Switch.open>false</cim:Switch.open>
+		<cim:Switch.ratedCurrent>100</cim:Switch.ratedCurrent>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:Breaker>
+
+</rdf:RDF>
