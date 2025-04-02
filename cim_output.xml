@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF xmlns:cim="http://iec.ch/TC57/2016/CIM-schema-cim#" xmlns:cim302="http://iec.ch/TC57/2018/CIM-schema-cim#" xmlns:dtps="http://dtps.cloud/2023/schema-cim01#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+	<cim:Substation rdf:ID = "_c4b66487-d98a-4d8a-87f4-142124b18e14">
+		<cim:IdentifiedObject.mRID>c4b66487-d98a-4d8a-87f4-142124b18e14</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Substation 1</cim:IdentifiedObject.name>
+	</cim:Substation>
+
+	<cim:Line rdf:ID = "_d55146be-1f7e-4113-94a2-08eed9e3bdf7">
+		<cim:IdentifiedObject.mRID>d55146be-1f7e-4113-94a2-08eed9e3bdf7</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Transmission Line 1</cim:IdentifiedObject.name>
+	</cim:Line>
+
+	<cim:Line rdf:ID = "_99ca703f-7615-45aa-afaf-fb95c4e4b327">
+		<cim:IdentifiedObject.mRID>99ca703f-7615-45aa-afaf-fb95c4e4b327</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Transmission Line 2</cim:IdentifiedObject.name>
+	</cim:Line>
+
+	<cim:EquivalentInjection rdf:ID = "_d214150d-78c5-4c1a-bc3e-4aff5545013d">
+		<cim:IdentifiedObject.mRID>d214150d-78c5-4c1a-bc3e-4aff5545013d</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>E1</cim:IdentifiedObject.name>
+		<cim:EquivalentInjection.r>0.26167978121471985</cim:EquivalentInjection.r>
+		<cim:EquivalentInjection.r2>0.26167978121471985</cim:EquivalentInjection.r2>
+		<cim:EquivalentInjection.x>4.993147673772869</cim:EquivalentInjection.x>
+		<cim:EquivalentInjection.x2>4.993147673772869</cim:EquivalentInjection.x2>
+		<cim:EquivalentInjection.r0>0.26167978121471985</cim:EquivalentInjection.r0>
+		<cim:EquivalentInjection.x0>4.993147673772869</cim:EquivalentInjection.x0>
+		<cim:EquivalentInjection.emfTimeConstant>0.05</cim:EquivalentInjection.emfTimeConstant>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="#5rpxxntp-dd65-5zvx-hfld-25g9vvc7yz2c"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#r6eo13jv-wb32-39fq-y1ov-xh89vasb7z4n"/>
+	</cim:EquivalentInjection>
+
+	<cim:Breaker rdf:ID = "_7c5e9319-8816-488f-a632-2e9b78e0c9da">
+		<cim:IdentifiedObject.mRID>7c5e9319-8816-488f-a632-2e9b78e0c9da</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q1</cim:IdentifiedObject.name>
+		<cim:Switch.open>false</cim:Switch.open>
+		<cim:Switch.ratedCurrent>100</cim:Switch.ratedCurrent>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:Breaker>
+
+	<cim:BusbarSection rdf:ID = "_3a450446-b829-4727-b4d8-aa4002ae07c3">
+		<cim:IdentifiedObject.mRID>3a450446-b829-4727-b4d8-aa4002ae07c3</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BUS1</cim:IdentifiedObject.name>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:BusbarSection>
+
+	<cim:Breaker rdf:ID = "_97a816c3-293b-4b47-9977-3a2908e85731">
+		<cim:IdentifiedObject.mRID>97a816c3-293b-4b47-9977-3a2908e85731</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q2</cim:IdentifiedObject.name>
+		<cim:Switch.open>false</cim:Switch.open>
+		<cim:Switch.ratedCurrent>100</cim:Switch.ratedCurrent>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:Breaker>
+
+	<cim:PowerTransformer rdf:ID = "_57e1558e-8af4-40b0-8295-2c81cebf7bdd">
+		<cim:IdentifiedObject.mRID>57e1558e-8af4-40b0-8295-2c81cebf7bdd</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>T1</cim:IdentifiedObject.name>
+		<cim:PowerTransformer.isPartOfGeneratorUnit>false</cim:PowerTransformer.isPartOfGeneratorUnit>
+		<cim:TransformerEnd.magBaseU>1.17</cim:TransformerEnd.magBaseU>
+		<cim:TransformerEnd.bmagSat>0.2</cim:TransformerEnd.bmagSat>
+		<cim:TransformerEnd.magSatFlux>125.0</cim:TransformerEnd.magSatFlux>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="#y6be5196-8oe0-x21m-sjlh-f6lpz277oaeg"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#3ulub3e8-684u-g8bq-x264-pyaudpwyt14g"/>
+	</cim:PowerTransformer>
+
+	<cim:Breaker rdf:ID = "_745fe861-3a8c-4d00-8f15-8c6d7474bdf2">
+		<cim:IdentifiedObject.mRID>745fe861-3a8c-4d00-8f15-8c6d7474bdf2</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q3</cim:IdentifiedObject.name>
+		<cim:Switch.open>false</cim:Switch.open>
+		<cim:Switch.ratedCurrent>100</cim:Switch.ratedCurrent>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:Breaker>
+
+	<cim:BusbarSection rdf:ID = "_5dc6dcbe-17df-4a9c-9f37-972c2df36d29">
+		<cim:IdentifiedObject.mRID>5dc6dcbe-17df-4a9c-9f37-972c2df36d29</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BUS2</cim:IdentifiedObject.name>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:BusbarSection>
+
+	<cim:Breaker rdf:ID = "_4e822b92-09f8-4c06-8b4b-f500c16804fc">
+		<cim:IdentifiedObject.mRID>4e822b92-09f8-4c06-8b4b-f500c16804fc</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q4</cim:IdentifiedObject.name>
+		<cim:Switch.open>false</cim:Switch.open>
+		<cim:Switch.ratedCurrent>100</cim:Switch.ratedCurrent>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:Breaker>
+
+	<cim:EnergyConsumer rdf:ID = "_456f3b43-6576-4169-986c-16c6e99935f8">
+		<cim:IdentifiedObject.mRID>456f3b43-6576-4169-986c-16c6e99935f8</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>L1</cim:IdentifiedObject.name>
+		<cim:EnergyConsumer.grounded>false</cim:EnergyConsumer.grounded>
+		<cim:EnergyConsumer.pfixed>13.92</cim:EnergyConsumer.pfixed>
+		<cim:EnergyConsumer.p>13.92</cim:EnergyConsumer.p>
+		<cim:EnergyConsumer.qfixed>7.89</cim:EnergyConsumer.qfixed>
+		<cim:EnergyConsumer.q>7.89</cim:EnergyConsumer.q>
+		<cim:EnergyConsumer.ratedVoltage>10</cim:EnergyConsumer.ratedVoltage>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##9fd0eedd-2fbb-4160-86ba-5d577108df8d"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="##e0a21a60-5d62-48f5-8b8e-4d3a6fb9795b"/>
+		<cim:EnergyConsumer.LoadResponse rdf:resource="##8ce25b1d-045a-438a-a6b7-641023339471"/>
+	</cim:EnergyConsumer>
+
+	<cim:ACLineSegment rdf:ID = "_90f315fa-688b-4b79-9997-2a17251af71f">
+		<cim:IdentifiedObject.mRID>90f315fa-688b-4b79-9997-2a17251af71f</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Line1</cim:IdentifiedObject.name>
+		<cim:Conductor.length>40</cim:Conductor.length>
+		<cim:ACLineSegment.r>4.640000000000001</cim:ACLineSegment.r>
+		<cim:ACLineSegment.r0>46.4</cim:ACLineSegment.r0>
+		<cim:ACLineSegment.x>16.0</cim:ACLineSegment.x>
+		<cim:ACLineSegment.x0>48.0</cim:ACLineSegment.x0>
+		<cim:ACLineSegment.bch>108.0</cim:ACLineSegment.bch>
+		<cim:ACLineSegment.b0ch>90.0</cim:ACLineSegment.b0ch>
+		<cim:ACLineSegment.ratedActivePower>100</cim:ACLineSegment.ratedActivePower>
+		<cim:ACLineSegment.userConcentratedParameters>false</cim:ACLineSegment.userConcentratedParameters>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="#e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#99ca703f-7615-45aa-afaf-fb95c4e4b327"/>
+	</cim:ACLineSegment>
+
+	<cim:EquivalentInjection rdf:ID = "_f8ae4fba-c20d-43ea-bb07-899f30780665">
+		<cim:IdentifiedObject.mRID>f8ae4fba-c20d-43ea-bb07-899f30780665</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>E2</cim:IdentifiedObject.name>
+		<cim:EquivalentInjection.r>0.26167978121471985</cim:EquivalentInjection.r>
+		<cim:EquivalentInjection.r2>0.26167978121471985</cim:EquivalentInjection.r2>
+		<cim:EquivalentInjection.x>4.993147673772869</cim:EquivalentInjection.x>
+		<cim:EquivalentInjection.x2>4.993147673772869</cim:EquivalentInjection.x2>
+		<cim:EquivalentInjection.r0>0.26167978121471985</cim:EquivalentInjection.r0>
+		<cim:EquivalentInjection.x0>4.993147673772869</cim:EquivalentInjection.x0>
+		<cim:EquivalentInjection.emfTimeConstant>0.05</cim:EquivalentInjection.emfTimeConstant>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="#lcvwho2j-r7i6-59kk-vt6a-740uemw1kod7"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#i61gtme0-gnyo-3am4-km80-rw9gu74mjhpr"/>
+	</cim:EquivalentInjection>
+
+	<cim:Breaker rdf:ID = "_89a61c9e-9750-4ada-b4f6-399fdbab6391">
+		<cim:IdentifiedObject.mRID>89a61c9e-9750-4ada-b4f6-399fdbab6391</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q5</cim:IdentifiedObject.name>
+		<cim:Switch.open>false</cim:Switch.open>
+		<cim:Switch.ratedCurrent>100</cim:Switch.ratedCurrent>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:Breaker>
+
+	<cim:BusbarSection rdf:ID = "_ec100d29-212b-4269-a835-780e2f8420e3">
+		<cim:IdentifiedObject.mRID>ec100d29-212b-4269-a835-780e2f8420e3</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BUS3</cim:IdentifiedObject.name>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:BusbarSection>
+
+	<cim:Breaker rdf:ID = "_7c3005c8-ed08-47e0-bbcc-8eb933dd719f">
+		<cim:IdentifiedObject.mRID>7c3005c8-ed08-47e0-bbcc-8eb933dd719f</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q6</cim:IdentifiedObject.name>
+		<cim:Switch.open>false</cim:Switch.open>
+		<cim:Switch.ratedCurrent>100</cim:Switch.ratedCurrent>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:Breaker>
+
+	<cim:PowerTransformer rdf:ID = "_52e807b0-8bf4-4c9a-8e1d-c640002b220c">
+		<cim:IdentifiedObject.mRID>52e807b0-8bf4-4c9a-8e1d-c640002b220c</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>T1clone</cim:IdentifiedObject.name>
+		<cim:PowerTransformer.isPartOfGeneratorUnit>false</cim:PowerTransformer.isPartOfGeneratorUnit>
+		<cim:TransformerEnd.magBaseU>1.17</cim:TransformerEnd.magBaseU>
+		<cim:TransformerEnd.bmagSat>0.2</cim:TransformerEnd.bmagSat>
+		<cim:TransformerEnd.magSatFlux>125.0</cim:TransformerEnd.magSatFlux>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="#cwbrupio-7yak-ksqr-l4fx-7jus81mqfjgm"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#evc5qw68-ydml-202t-gsyh-sqv2pgmbz9b9"/>
+	</cim:PowerTransformer>
+
+	<cim:Breaker rdf:ID = "_845f803a-6f15-4f84-a016-0880401e1762">
+		<cim:IdentifiedObject.mRID>845f803a-6f15-4f84-a016-0880401e1762</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q7</cim:IdentifiedObject.name>
+		<cim:Switch.open>false</cim:Switch.open>
+		<cim:Switch.ratedCurrent>100</cim:Switch.ratedCurrent>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:Breaker>
+
+	<cim:BusbarSection rdf:ID = "_165a49a5-1f4e-4173-8ba1-69ba45471707">
+		<cim:IdentifiedObject.mRID>165a49a5-1f4e-4173-8ba1-69ba45471707</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BUS4</cim:IdentifiedObject.name>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:BusbarSection>
+
+	<cim:Breaker rdf:ID = "_1ee8d50a-ba5a-4f26-93da-47afa5855fcc">
+		<cim:IdentifiedObject.mRID>1ee8d50a-ba5a-4f26-93da-47afa5855fcc</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Q8</cim:IdentifiedObject.name>
+		<cim:Switch.open>false</cim:Switch.open>
+		<cim:Switch.ratedCurrent>100</cim:Switch.ratedCurrent>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:Breaker>
+
+	<cim:EnergyConsumer rdf:ID = "_a8cd2fe2-4704-4e32-93e2-070c48a44941">
+		<cim:IdentifiedObject.mRID>a8cd2fe2-4704-4e32-93e2-070c48a44941</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>L2</cim:IdentifiedObject.name>
+		<cim:EnergyConsumer.grounded>false</cim:EnergyConsumer.grounded>
+		<cim:EnergyConsumer.pfixed>13.92</cim:EnergyConsumer.pfixed>
+		<cim:EnergyConsumer.p>13.92</cim:EnergyConsumer.p>
+		<cim:EnergyConsumer.qfixed>7.89</cim:EnergyConsumer.qfixed>
+		<cim:EnergyConsumer.q>7.89</cim:EnergyConsumer.q>
+		<cim:EnergyConsumer.ratedVoltage>10</cim:EnergyConsumer.ratedVoltage>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##9fd0eedd-2fbb-4160-86ba-5d577108df8d"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="##e0a21a60-5d62-48f5-8b8e-4d3a6fb9795b"/>
+		<cim:EnergyConsumer.LoadResponse rdf:resource="##8ce25b1d-045a-438a-a6b7-641023339471"/>
+	</cim:EnergyConsumer>
+
+	<cim:ACLineSegment rdf:ID = "_aa0701d7-dd51-4ebd-99b8-83d85d78a8ef">
+		<cim:IdentifiedObject.mRID>aa0701d7-dd51-4ebd-99b8-83d85d78a8ef</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Line2</cim:IdentifiedObject.name>
+		<cim:Conductor.length>40</cim:Conductor.length>
+		<cim:ACLineSegment.r>4.640000000000001</cim:ACLineSegment.r>
+		<cim:ACLineSegment.r0>46.4</cim:ACLineSegment.r0>
+		<cim:ACLineSegment.x>16.0</cim:ACLineSegment.x>
+		<cim:ACLineSegment.x0>48.0</cim:ACLineSegment.x0>
+		<cim:ACLineSegment.bch>108.0</cim:ACLineSegment.bch>
+		<cim:ACLineSegment.b0ch>90.0</cim:ACLineSegment.b0ch>
+		<cim:ACLineSegment.ratedActivePower>100</cim:ACLineSegment.ratedActivePower>
+		<cim:ACLineSegment.userConcentratedParameters>false</cim:ACLineSegment.userConcentratedParameters>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="#e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#99ca703f-7615-45aa-afaf-fb95c4e4b327"/>
+	</cim:ACLineSegment>
+
+	<cim:Breaker rdf:ID = "_824916bf-0d81-4773-8fc8-ac01c6a4be8e">
+		<cim:IdentifiedObject.mRID>824916bf-0d81-4773-8fc8-ac01c6a4be8e</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>QS1</cim:IdentifiedObject.name>
+		<cim:Switch.open>false</cim:Switch.open>
+		<cim:Switch.ratedCurrent>100</cim:Switch.ratedCurrent>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:Breaker>
+
+	<cim:Breaker rdf:ID = "_2347dcfc-8989-40cc-a77c-18311074387b">
+		<cim:IdentifiedObject.mRID>2347dcfc-8989-40cc-a77c-18311074387b</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>QS2</cim:IdentifiedObject.name>
+		<cim:Switch.open>false</cim:Switch.open>
+		<cim:Switch.ratedCurrent>100</cim:Switch.ratedCurrent>
+		<cim:ConductingEquipment.BaseVoltage rdf:resource="##e6240428-fe41-4cb9-80d2-52bd2bbe2c03"/>
+		<cim:Equipment.EquipmentContainer rdf:resource="#7e3860fe-15e8-4d3a-bdeb-01321c768bf7"/>
+	</cim:Breaker>
+
+</rdf:RDF>
